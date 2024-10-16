@@ -20,25 +20,49 @@
         header {
             background-color: #ff5a5f;
             color: white;
-            text-align: center;
             padding: 20px 0;
             position: relative;
         }
 
+        /* Logo en esquina superior izquierda con puntas redondeadas */
         header img {
-            width: 100px;
-            border-radius: 50%; /* Hace que las esquinas del logo sean redondeadas */
-            position: relative;
-            display: block;
-            margin: 0 auto; /* Centrar el logo */
+            width: 80px;
+            height: auto;
+            border-radius: 15px; /* Puntas redondeadas pero manteniendo la forma cuadrada */
+            position: absolute;
+            top: 20px;
+            left: 20px;
         }
 
+        /* Estilo del título principal */
         h1 {
             margin: 0;
             font-size: 2.5em;
             text-transform: uppercase;
+            text-align: center;
         }
 
+        /* WhatsApp en la esquina superior derecha */
+        .contact-info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .contact-info a {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        /* Contenedor de propiedades */
         .container {
             display: flex;
             justify-content: space-around;
@@ -81,13 +105,13 @@
 
         .property a {
             display: inline-block;
-            background-color: white; /* Fondo blanco */
-            color: #FF5A5F; /* Color de Airbnb */
-            font-family: 'Arial', sans-serif; /* Tipografía Circular */
+            background-color: white;
+            color: #FF5A5F;
+            font-family: 'Arial', sans-serif;
             padding: 10px 20px;
             margin: 10px 0;
             text-decoration: none;
-            border: 2px solid #FF5A5F; /* Borde similar a Airbnb */
+            border: 2px solid #FF5A5F;
             border-radius: 5px;
             transition: background-color 0.3s ease, color 0.3s ease;
             font-weight: bold;
@@ -104,27 +128,6 @@
             background-color: #333;
             color: white;
             position: relative;
-        }
-
-        .whatsapp {
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .whatsapp img {
-            width: 40px;
-            margin-right: 10px;
-        }
-
-        .whatsapp a {
-            color: white;
-            font-size: 1.2em;
-            text-decoration: none;
         }
 
         /* Responsivo para móviles */
@@ -167,8 +170,12 @@
 <body>
 
     <header>
-        <h1>Hospedaje Hermoso</h1>
         <img src="logo.jpeg" alt="Logo Hospedaje">
+        <h1>Hospedaje Hermoso</h1>
+        <div class="contact-info">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            <a href="https://wa.me/5951219281" target="_blank">595 121 9281</a>
+        </div>
     </header>
 
     <div class="container">
@@ -231,16 +238,7 @@
 
     <footer>
         <p>&copy; 2024 Mis Propiedades en Airbnb. Todos los derechos reservados.</p>
-        <div class="whatsapp">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-            <a href="https://wa.me/5951219281" target="_blank">595 121 9281</a>
-        </div>
     </footer>
 
 </body>
 </html>
-
-
-</body>
-</html>
-
