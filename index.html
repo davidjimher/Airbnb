@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alojamientos en Veracruz e Ixmiquilpan. Descubre nuestras propiedades en Airbnb con excelente ubicación y atención.">
+    <meta name="keywords" content="Airbnb, alojamiento, Veracruz, Ixmiquilpan, propiedades en renta">
     <title>Mis Propiedades en Airbnb</title>
     <style>
         body {
@@ -48,6 +50,12 @@
             margin: 20px;
             text-align: center;
             overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .property:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .property img {
@@ -75,6 +83,7 @@
             margin: 10px 0;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .property a:hover {
@@ -110,7 +119,80 @@
             text-decoration: none;
         }
 
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a img {
+            width: 30px;
+            margin: 0 10px;
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .property {
+                width: 90%;
+            }
+        }
+
+        /* Estilo de formulario */
+        #contacto {
+            margin: 40px;
+            text-align: center;
+        }
+
+        #contacto form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contacto input, #contacto textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contacto button {
+            padding: 10px 20px;
+            background-color: #ff5a5f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contacto button:hover {
+            background-color: #e14a4f;
+        }
+
+        /* Mapa */
+        #mapa {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        /* Testimonios */
+        #testimonios {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .testimonio {
+            margin: 20px 0;
+            font-style: italic;
+        }
+
     </style>
+</head>
 <body>
 
     <header>
@@ -144,14 +226,50 @@
         </div>
     </div>
 
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonio">
+            <p>"Una estancia maravillosa, el departamento en Veracruz superó nuestras expectativas."</p>
+            <span>- María Rodríguez</span>
+        </div>
+        <div class="testimonio">
+            <p>"Nos encantó la casa en Ixmiquilpan, perfecta para desconectar del mundo."</p>
+            <span>- Juan Pérez</span>
+        </div>
+    </section>
+
+    <!-- Sección del mapa -->
+    <section id="mapa">
+        <h2>Ubicación de las Propiedades</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=tu-url-de-mapa"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"></iframe>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="https://formspree.io/f/tu-email" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="message" placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2024 Mis Propiedades en Airbnb. Todos los derechos reservados.</p>
         <div class="whatsapp">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             <a href="https://wa.me/5951219281" target="_blank">595 121 9281</a>
         </div>
+
     </footer>
 
 </body>
 </html>
-
