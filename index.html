@@ -42,24 +42,29 @@
             text-align: center;
         }
 
-        /* WhatsApp en la esquina superior derecha en una sola línea */
+                /* WhatsApp en la esquina superior derecha en una sola línea */
         .contact-info {
             position: absolute;
             top: 20px;
             right: 20px;
             display: flex;
             align-items: center;
-            gap: 10px; /* Espacio entre el logo y el número */
+            gap: 10px; /* Espacio entre "Contacto", el logo y el número */
         }
-
+        
         .contact-info img {
             width: 30px;
         }
-
+        
         .contact-info a {
             color: white;
             font-size: 1.2em;
             text-decoration: none;
+        }
+        
+        .contact-info span {
+            font-size: 1.2em;
+            color: white;
         }
 
         /* Contenedor de propiedades */
@@ -192,10 +197,12 @@
         <img src="logo.jpeg" alt="Logo Hospedaje">
         <h1>Hospedaje Hermoso</h1>
         <div class="contact-info">
+            <span>Contacto:</span>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             <a href="https://wa.me/5951219281" target="_blank">595 121 9281</a>
         </div>
     </header>
+
 
     <div class="container">
         <!-- Primera Propiedad -->
