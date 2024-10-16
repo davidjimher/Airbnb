@@ -150,29 +150,49 @@
             max-width: 100%;
         }
 
-        /* Responsivo para móviles */
+                /* Responsivo para móviles */
         @media (max-width: 768px) {
+            header img {
+                width: 60px; /* Ajusta el tamaño del logo en móviles */
+                top: 10px; /* Ajuste de margen superior */
+                left: 10px; /* Ajuste de margen izquierdo */
+            }
+        
+            h1 {
+                font-size: 1.8em; /* Reduce el tamaño del título en móviles */
+            }
+        
+            .contact-info {
+                top: 10px; /* Ajuste de margen superior en móviles */
+                right: 10px;
+                gap: 5px; /* Reduce el espacio entre el logo de WhatsApp y el número */
+            }
+        
+            .contact-info a {
+                font-size: 1em; /* Ajusta el tamaño del texto en móviles */
+            }
+        
             .container {
                 flex-direction: column;
                 align-items: center;
             }
-
+        
             .property {
-                width: 90%;
+                width: 90%; /* Aumenta el ancho de las propiedades en móviles */
             }
-
+        
             #mapa {
                 flex-direction: column;
             }
         }
-
+        
         /* Estilo de testimonios */
         #testimonios {
             background-color: #f9f9f9;
             padding: 40px 20px;
             text-align: center;
         }
-
+        
         .testimonio {
             margin: 20px 0;
             font-style: italic;
@@ -181,7 +201,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
+        
         .testimonio span {
             display: block;
             font-weight: bold;
