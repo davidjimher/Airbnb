@@ -7,8 +7,10 @@
     <meta name="keywords" content="Airbnb, alojamiento, Veracruz, Ixmiquilpan, propiedades en renta">
     <title>Hospedaje Hermoso - Mis Propiedades en Airbnb</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;600&display=swap'); /* Tipografía Circular (parecida a Airbnb) */
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f0f8ff;
             margin: 0;
             padding: 0;
@@ -25,10 +27,10 @@
 
         header img {
             width: 100px;
-            position: absolute;
-            top: 10px;
-            left: 20px;
             border-radius: 50%; /* Hace que las esquinas del logo sean redondeadas */
+            position: relative;
+            display: block;
+            margin: 0 auto; /* Centrar el logo */
         }
 
         h1 {
@@ -79,17 +81,21 @@
 
         .property a {
             display: inline-block;
-            background-color: #ff5a5f;
-            color: white;
+            background-color: white; /* Fondo blanco */
+            color: #FF5A5F; /* Color de Airbnb */
+            font-family: 'Arial', sans-serif; /* Tipografía Circular */
             padding: 10px 20px;
             margin: 10px 0;
             text-decoration: none;
+            border: 2px solid #FF5A5F; /* Borde similar a Airbnb */
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-weight: bold;
         }
 
         .property a:hover {
-            background-color: #e14a4f;
+            background-color: #FF5A5F;
+            color: white;
         }
 
         footer {
@@ -230,6 +236,10 @@
             <a href="https://wa.me/5951219281" target="_blank">595 121 9281</a>
         </div>
     </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
