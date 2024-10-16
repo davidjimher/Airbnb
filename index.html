@@ -17,49 +17,43 @@
             color: #333;
         }
 
-        header {
+       header {
             background-color: #ff5a5f;
             color: white;
             padding: 20px 0;
-            position: relative;
-            text-align: center; /* Centra el contenido */
+            display: flex;
+            justify-content: space-between; /* Alinea el contenido del header */
+            align-items: center; /* Centra verticalmente */
         }
-
-
-        /* Logo en esquina superior izquierda con puntas redondeadas */
+        
         header img {
-            width: 120px; /* Aumenta el tamaño del logo */
+            width: 120px; /* Tamaño del logo de Hospedaje Hermoso */
             height: auto;
             border-radius: 15px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            margin-left: 20px; /* Margen izquierdo para separar del borde */
         }
-
-        /* Estilo del título principal */
-          h1 {
+        
+        h1 {
             margin: 0;
-            font-size: 3em; /* Aumenta el tamaño del texto del título */
+            font-size: 3em; /* Tamaño del título */
             text-transform: uppercase;
+            flex-grow: 1; /* Hace que el título ocupe el espacio entre el logo y el icono de WhatsApp */
             text-align: center;
-            margin-top: 60px;
         }
-
-                /* WhatsApp en la esquina superior derecha en una sola línea */
+        
         .contact-info {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            margin-right: 20px; /* Margen derecho para que no quede pegado al borde */
         }
         
         .contact-info img {
             width: 30px; /* Tamaño del logo de WhatsApp */
             height: auto;
         }
-                
+        
         .contact-info a {
             text-decoration: none;
         }
+
         
         .contact-info span {
             font-size: 1.2em;
