@@ -132,20 +132,41 @@
 
         /* Sección Cosas que hacer en Boca del Río */
         #boca-del-rio-section {
-            text-align: center;
+            display: flex;
+            justify-content: center;
             padding: 40px 20px;
             background-color: #eaf7ff;
             margin-top: 20px;
         }
-
-        #boca-del-rio-section img {
-            max-width: 100%;
+        
+        .boca-del-rio-content {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        
+        .boca-del-rio-content h2 {
+            color: #007acc;
+            font-size: 1.8em;
+        }
+        
+        .boca-del-rio-content p {
+            color: #555;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        
+        .boca-del-rio-content img {
+            width: 100%;
             height: auto;
             border-radius: 10px;
-            margin-top: 20px;
+            margin: 20px 0;
         }
-
-        #boca-del-rio-section a {
+        
+        .boca-del-rio-content a {
             display: inline-block;
             background-color: #ff5a5f;
             color: white;
@@ -156,10 +177,11 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
-        #boca-del-rio-section a:hover {
+        
+        .boca-del-rio-content a:hover {
             background-color: #ff787b;
         }
+
 
         footer {
             text-align: center;
@@ -218,13 +240,15 @@
         </div>
     </section>
 
-    <!-- Sección de Cosas que hacer en Boca del Río -->
     <section id="boca-del-rio-section">
-        <h2>Cosas que hacer en Boca del Río</h2>
-        <p>Explora las mejores actividades y lugares turísticos que ofrece Boca del Río. Desde playas hasta restaurantes locales, disfruta de una experiencia inolvidable.</p>
-        <a href="actividades.html">Ver más actividades</a>
-        <img src="boca_del_rio.png" alt="Imagen representativa de Boca del Río">
+        <div class="boca-del-rio-content">
+            <h2>Cosas que hacer en Boca del Río</h2>
+            <p>Explora las mejores actividades y lugares turísticos que ofrece Boca del Río. Desde playas hasta restaurantes locales, disfruta de una experiencia inolvidable.</p>
+            <img src="boca_del_rio.jpg" alt="Imagen representativa de Boca del Río">
+            <a href="actividades.html">Ver actividades</a>
+        </div>
     </section>
+
 
     <footer>
         <p>&copy; 2024 Mis Propiedades en Airbnb. Todos los derechos reservados.</p>
