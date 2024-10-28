@@ -4,7 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosas que hacer en Boca del Río</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS compartido -->
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener el archivo CSS enlazado -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #007acc;
+        }
+
+        #actividades {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .property {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .property:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property h2 {
+            color: #ff5a5f;
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .property p {
+            padding: 0 15px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .property strong {
+            color: #007acc;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #007acc;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .property {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +123,7 @@
     </header>
 
     <section id="actividades">
-        <h2 style="text-align: center; margin-top: 40px;">Actividades en Boca del Río</h2>
+        <h2 style="margin-top: 20px;">Actividades en Boca del Río</h2>
         <div class="container">
             
             <!-- Andamar -->
@@ -40,16 +148,15 @@
                 <img src="isla-de-enmedio-veracruz-1-2.webp" alt="Isla de Enmedio">
                 <p>Parte de la Reserva Natural de Veracruz. Ideal para snorkel, kayak y explorar playas vírgenes.</p>
                 <p><strong>Cómo llegar:</strong> Desde Antón Lizardo o buscando una agencia de tours. Puedes reservar recorridos de kayak o lancha con agencias como <a href="https://www.monkeyfish.com.mx/kayak-veracruz-isla-de-sacrificios" target="_blank">Monkey Fish</a>, que también ofrecen kayaks a la Isla de Sacrificios.</p>
-                <p><strong>Ubicación:</strong> Reserva Natural, Veracruz.</p>
             </div>
 
             <!-- Cancuncito -->
             <div class="property">
-                <h2>Cancuncito</h2>
+                <h2>Cancuncito e Isla de Sacrificios</h2>
                 <img src="SACRIFICIOS.jpg" alt="Cancuncito">
                 <p>Se cree que la formación de este islote rodeado de aguas turquesa se originó gracias a los movimientos del viento y ciertas corrientes provocadas por el huracán Gilberto en 1988.</p>
                 <p>Perfecto para aquellos viajeros que buscan disfrutar de la belleza natural y explorar la cultura de la región.</p>
-                <p><strong>Cómo llegar:</strong> Desde Plaza Acuario en Playa Villa del Mar a partir de las 9 AM. El recorrido dura de dos a tres horas y cuesta desde 250 pesos.</p>
+                <p><strong>Cómo llegar:</strong> Desde Plaza Acuario en Playa Villa del Mar a partir de las 9 AM. El recorrido dura de dos a tres horas y cuesta desde 250 pesos por persona.</p>
             </div>
 
             <!-- Acuático Inbursa -->
