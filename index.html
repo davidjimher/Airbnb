@@ -7,7 +7,7 @@
     <meta name="keywords" content="Airbnb, alojamiento, Veracruz, Ixmiquilpan, propiedades en renta">
     <title>Hospedaje Hermoso - Mis Propiedades en Airbnb</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;600&display=swap'); /* Tipografía Circular (parecida a Airbnb) */
+        /* Estilos existentes */
         
         body {
             font-family: 'Arial', sans-serif;
@@ -22,45 +22,34 @@
             color: white;
             padding: 20px 0;
             display: flex;
-            justify-content: space-between; /* Alinea el contenido del header */
-            align-items: center; /* Centra verticalmente */
+            justify-content: space-between;
+            align-items: center;
         }
         
         header img {
-            width: 120px; /* Tamaño del logo de Hospedaje Hermoso */
+            width: 120px;
             height: auto;
             border-radius: 15px;
-            margin-left: 20px; /* Margen izquierdo para separar del borde */
+            margin-left: 20px;
         }
         
         h1 {
             margin: 0;
-            font-size: 3em; /* Tamaño del título */
+            font-size: 3em;
             text-transform: uppercase;
-            flex-grow: 1; /* Hace que el título ocupe el espacio entre el logo y el icono de WhatsApp */
+            flex-grow: 1;
             text-align: center;
         }
         
         .contact-info {
-            margin-right: 20px; /* Margen derecho para que no quede pegado al borde */
+            margin-right: 20px;
         }
         
         .contact-info img {
-            width: 30px; /* Tamaño del logo de WhatsApp */
+            width: 30px;
             height: auto;
         }
         
-        .contact-info a {
-            text-decoration: none;
-        }
-
-        
-        .contact-info span {
-            font-size: 1.2em;
-            color: white;
-        }
-
-        /* Contenedor de propiedades */
         .container {
             display: flex;
             justify-content: space-around;
@@ -105,7 +94,6 @@
             display: inline-block;
             background-color: white;
             color: #FF5A5F;
-            font-family: 'Arial', sans-serif;
             padding: 10px 20px;
             margin: 10px 0;
             text-decoration: none;
@@ -120,66 +108,6 @@
             color: white;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            position: relative;
-        }
-
-        /* Centrar los mapas */
-        #mapa {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 40px 0;
-        }
-
-        iframe {
-            border: 0;
-            width: 400px;
-            height: 300px;
-            max-width: 100%;
-        }
-
-                /* Responsivo para móviles */
-        @media (max-width: 768px) {
-            header img {
-                width: 60px; /* Ajusta el tamaño del logo en móviles */
-                top: 10px; /* Ajuste de margen superior */
-                left: 10px; /* Ajuste de margen izquierdo */
-            }
-        
-            h1 {
-                font-size: 1.8em; /* Reduce el tamaño del título en móviles */
-            }
-        
-            .contact-info {
-                top: 10px; /* Ajuste de margen superior en móviles */
-                right: 10px;
-                gap: 5px; /* Reduce el espacio entre el logo de WhatsApp y el número */
-            }
-        
-            .contact-info a {
-                font-size: 1em; /* Ajusta el tamaño del texto en móviles */
-            }
-        
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
-        
-            .property {
-                width: 90%; /* Aumenta el ancho de las propiedades en móviles */
-            }
-        
-            #mapa {
-                flex-direction: column;
-            }
-        }
-        
-        /* Estilo de testimonios */
         #testimonios {
             background-color: #f9f9f9;
             padding: 40px 20px;
@@ -202,17 +130,50 @@
             color: #ff5a5f;
         }
 
+        /* Sección Cosas que hacer en Boca del Río */
+        #boca-del-rio-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #eaf7ff;
+            margin-top: 20px;
+        }
+
+        #boca-del-rio-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #boca-del-rio-section a {
+            display: inline-block;
+            background-color: #ff5a5f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #boca-del-rio-section a:hover {
+            background-color: #ff787b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
 
-
     <header>
         <img src="logo.jpeg" alt="Logo Hospedaje">
         <h1>Hospedaje Hermoso</h1>
-        <nav>
-            <a href="actividades.html">Cosas que hacer en Boca del Río</a>
-        </nav>
         <div class="contact-info">
             <a href="https://wa.me/5951219281" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -221,7 +182,7 @@
     </header>
 
     <div class="container">
-        <!-- Primera Propiedad -->
+        <!-- Propiedades -->
         <div class="property">
             <img src="depa_vera.png" alt="Departamento en Boca del Río, Veracruz">
             <h2>Departamento en Boca del Río, Veracruz</h2>
@@ -229,7 +190,6 @@
             <a href="https://www.airbnb.com/slink/GZ822FUJ" target="_blank">Ver en Airbnb</a>
         </div>
 
-        <!-- Segunda Propiedad -->
         <div class="property">
             <img src="ixmi_grand.png" alt="Casa Grande en Ixmiquilpan, Hidalgo">
             <h2>Casa Grande en Ixmiquilpan, Hidalgo</h2>
@@ -237,7 +197,6 @@
             <a href="https://www.airbnb.com/slink/2lsUU4LP" target="_blank">Ver en Airbnb</a>
         </div>
 
-        <!-- Tercera Propiedad -->
         <div class="property">
             <img src="ixmi_peq.png" alt="Casa Pequeña en Ixmiquilpan, Hidalgo">
             <h2>Casa Pequeña en Ixmiquilpan, Hidalgo</h2>
@@ -259,19 +218,12 @@
         </div>
     </section>
 
-    <!-- Título de ubicación -->
-    <h2 style="text-align: center; margin-top: 40px;">Ubicación de las Propiedades</h2>
-
-    <!-- Sección del mapa -->
-    <section id="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.7531402589323!2d-96.10888708468161!3d19.15222198704605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c34172a7f1631f%3A0xf18e90b9b63d364b!2sBoca%20del%20R%C3%ADo%2C%20Veracruz!5e0!3m2!1ses!2smx!4v1697017041879!5m2!1ses!2smx"
-            allowfullscreen=""
-            loading="lazy"></iframe>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.753434622319!2d-99.21822388467543!3d20.48225598635978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d129f2b3b3084b%3A0x123456789abcd!2sIxmiquilpan%2C%20Hidalgo!5e0!3m2!1ses!2smx!4v1697017112345!5m2!1ses!2smx"
-            allowfullscreen=""
-            loading="lazy"></iframe>
+    <!-- Sección de Cosas que hacer en Boca del Río -->
+    <section id="boca-del-rio-section">
+        <h2>Cosas que hacer en Boca del Río</h2>
+        <p>Explora las mejores actividades y lugares turísticos que ofrece Boca del Río. Desde playas hasta restaurantes locales, disfruta de una experiencia inolvidable.</p>
+        <a href="actividades.html">Ver más actividades</a>
+        <img src="boca_del_rio.jpg" alt="Imagen representativa de Boca del Río">
     </section>
 
     <footer>
@@ -280,4 +232,3 @@
 
 </body>
 </html>
-
