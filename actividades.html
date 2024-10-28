@@ -14,14 +14,12 @@
             color: #333;
         }
 
-       header {
+        header {
             background-color: #007acc;
             color: white;
             padding: 20px;
-            display: flex;
-            flex-direction: column; /* Organiza en columna */
-            align-items: flex-start; 
-            text-align: left;
+            position: relative;
+            text-align: center; /* Centra el título */
         }
         
         header h1 {
@@ -31,7 +29,10 @@
         }
         
         nav {
-            margin-top: 10px; /* Espacio entre el título y el botón */
+            position: absolute;
+            left: 20px; /* Alinea el botón a la izquierda */
+            top: 50%;
+            transform: translateY(-50%); /* Centra verticalmente el botón en la barra */
         }
         
         nav a {
