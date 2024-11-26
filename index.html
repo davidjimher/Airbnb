@@ -17,7 +17,7 @@
             color: #333;
         }
 
-        header {
+       header {
             background-color: #ff5a5f;
             color: white;
             padding: 20px 0;
@@ -57,41 +57,116 @@
             margin: 20px;
         }
 
-        .location-card {
+        .property {
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
-            text-align: center;
-            padding: 20px;
             margin: 20px;
+            text-align: center;
+            overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .location-card:hover {
+        .property:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .location-card img {
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .property h2 {
+            color: #ff5a5f;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .property p {
+            font-size: 1em;
+            padding: 0 15px;
+        }
+
+        .property a {
+            display: inline-block;
+            background-color: white;
+            color: #FF5A5F;
+            padding: 10px 20px;
+            margin: 10px 0;
+            text-decoration: none;
+            border: 2px solid #FF5A5F;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .property a:hover {
+            background-color: #FF5A5F;
+            color: white;
+        }
+
+        #testimonios {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .testimonio {
+            margin: 20px 0;
+            font-style: italic;
+            background-color: #ffebeb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonio span {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #ff5a5f;
+        }
+
+        /* Sección Cosas que hacer en Boca del Río */
+        #boca-del-rio-section {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #eaf7ff;
+            margin-top: 20px;
+        }
+        
+        .boca-del-rio-content {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        
+        .boca-del-rio-content h2 {
+            color: #007acc;
+            font-size: 1.8em;
+        }
+        
+        .boca-del-rio-content p {
+            color: #555;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        
+        .boca-del-rio-content img {
             width: 100%;
             height: auto;
             border-radius: 10px;
             margin: 20px 0;
         }
-
-        .location-card h2 {
-            color: #007acc;
-            font-size: 1.8em;
-        }
-
-        .location-card p {
-            color: #555;
-            font-size: 1em;
-            margin-bottom: 20px;
-        }
-
-        .location-card a {
+        
+        .boca-del-rio-content a {
             display: inline-block;
             background-color: #ff5a5f;
             color: white;
@@ -102,10 +177,11 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-
-        .location-card a:hover {
+        
+        .boca-del-rio-content a:hover {
             background-color: #ff787b;
         }
+
 
         footer {
             text-align: center;
@@ -116,6 +192,7 @@
     </style>
 </head>
 <body>
+
     <header>
         <img src="logo.jpeg" alt="Logo Hospedaje">
         <h1>Hospedaje Hermoso</h1>
@@ -127,21 +204,58 @@
     </header>
 
     <div class="container">
-        <!-- Lugares de interés en Boca del Río -->
-        <div class="location-card">
-            <h2>Lugares de interés en Boca del Río</h2>
-            <p>Explora las mejores actividades y lugares turísticos que ofrece Boca del Río. Desde playas hasta restaurantes locales, disfruta de una experiencia inolvidable.</p>
-            <img src="boca_del_rio.png" alt="Imagen representativa de Boca del Río">
-            <a href="actividades.html">Ver actividades</a>
+        <!-- Propiedades -->
+        <div class="property">
+            <img src="depa_vera.png" alt="Departamento en Boca del Río, Veracruz">
+            <h2>Departamento en Boca del Río, Veracruz</h2>
+            <p>Descubre este acogedor departamento en Boca del Río, Veracruz. Ideal para parejas o viajeros de negocios con una ubicación excelente.</p>
+            <a href="https://www.airbnb.com/slink/GZ822FUJ" target="_blank">Ver en Airbnb</a>
         </div>
 
-        <!-- Lugares de interés en Ixmiquilpan -->
-        <div class="location-card">
-            <h2>Lugares de interés en Ixmiquilpan</h2>
-            <p>Explora las mejores actividades y lugares turísticos que ofrece Ixmiquilpan, Hidalgo. Desde aguas termales hasta restaurantes locales, disfruta de una experiencia única.</p>
-            <img src="centroixm.png" alt="Imagen representativa de Ixmiquilpan">
-            <a href="actividades_ixm.html">Ver actividades</a>
+        <div class="property">
+            <img src="ixmi_grand.png" alt="Casa Grande en Ixmiquilpan, Hidalgo">
+            <h2>Casa Grande en Ixmiquilpan, Hidalgo</h2>
+            <p>Una gran casa para familias, rodeada de naturaleza y tranquilidad. Perfecta para desconectar del estrés urbano en Ixmiquilpan, Hidalgo.</p>
+            <a href="https://www.airbnb.com/slink/2lsUU4LP" target="_blank">Ver en Airbnb</a>
         </div>
+
+        <div class="property">
+            <img src="ixmi_peq.png" alt="Casa Pequeña en Ixmiquilpan, Hidalgo">
+            <h2>Casa Pequeña en Ixmiquilpan, Hidalgo</h2>
+            <p>Una encantadora casa en Ixmiquilpan, Hidalgo. Ideal para parejas o pequeñas familias que buscan paz y privacidad.</p>
+            <a href="https://www.airbnb.com/slink/BYZFdjDk" target="_blank">Ver en Airbnb</a>
+        </div>
+    </div>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonio">
+            <p>"El lugar es muy agradable y muy cómodo, la ubicación es excelente y las indicaciones de llegada y entrada fueron muy fáciles de entender, Juan estuvo al pendiente y atendió las recomendaciones (Boca del Río)."</p>
+            <span>- Dianna</span>
+        </div>
+        <div class="testimonio">
+            <p>"Excelente ubicación, buen trato, se siente como un hogar, excelente para vacacionar por Ixmiquilpan y sus balnearios."</p>
+            <span>- Fernando</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Lugares de interés en Boca del Río -->
+    <div class="location-card">
+        <h2>Lugares de interés en Boca del Río</h2>
+        <p>Explora las mejores actividades y lugares turísticos que ofrece Boca del Río. Desde playas hasta restaurantes locales, disfruta de una experiencia inolvidable.</p>
+        <img src="boca_del_rio.png" alt="Imagen representativa de Boca del Río">
+        <a href="actividades.html">Ver actividades</a>
+    </div>
+
+    <!-- Lugares de interés en Ixmiquilpan -->
+    <div class="location-card">
+        <h2>Lugares de interés en Ixmiquilpan</h2>
+        <p>Explora las mejores actividades y lugares turísticos que ofrece Ixmiquilpan, Hidalgo. Desde aguas termales hasta restaurantes locales, disfruta de una experiencia única.</p>
+        <img src="centroixm.png" alt="Imagen representativa de Ixmiquilpan">
+        <a href="actividades_ixm.html">Ver actividades</a>
+    </div>
     </div>
 
     <footer>
